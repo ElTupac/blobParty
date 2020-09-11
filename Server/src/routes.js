@@ -11,5 +11,6 @@ routes.get('/', (req, res) => {
 });
 
 routes.post('/newplayer', playerController.newPlayer);
+routes.put('/:theid', playerController.updatePlayer);
 
 module.exports = routes;
